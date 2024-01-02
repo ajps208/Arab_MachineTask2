@@ -17,6 +17,7 @@ import "./App.css";
 
 // import required modules
 import { Parallax, Pagination, Navigation } from "swiper/modules";
+// slide detailes
 const slides = [
   {
     title: "Tiger",
@@ -58,6 +59,7 @@ function App() {
   return (
     <>
       <div className="maindiv flex flex-col md:flex-row justify-center items-center">
+        {/* image slider */}
         <Swiper
           style={{
             "--swiper-navigation-color": "#fff",
@@ -92,8 +94,10 @@ function App() {
             </SwiperSlide>
           ))}
         </Swiper>
+        {/* customisation */}
         <div className="flex flex-col shadow rounded me-10 p-5 mt-5 ms-6">
           <h1 className="text-center text-base font-bold mb-2">Customize</h1>
+          {/* first customisation */}
           <div className="flex justify-center items-center border p-2 rounded-md shadow-md">
             <label htmlFor="" className="text-sm font-bold mr-2">
               Choose your image parallax
@@ -110,7 +114,7 @@ function App() {
             </div>
          
           </div>
-
+          {/* second customisation */}
           <div className="flex justify-center items-center border p-2 rounded-md shadow-md">
             <label htmlFor="" className="text-sm font-bold mr-2">
               Choose your title parallax
@@ -126,6 +130,7 @@ function App() {
             </div>
          
           </div>
+          {/* thrid customisation */}
           <div className="flex justify-center items-center border p-2 rounded-md shadow-md">
             <label htmlFor="" className="text-sm font-bold mr-2">
               Choose your text parallax
